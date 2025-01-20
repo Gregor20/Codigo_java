@@ -1,0 +1,13 @@
+package fechas;
+
+import java.time.LocalDateTime;
+
+public class fecha_6 {
+
+	public static void main(String[] args) {
+		LocalDateTime hoy=LocalDateTime.now();
+		System.out.println(hoy);
+
+	}
+
+}

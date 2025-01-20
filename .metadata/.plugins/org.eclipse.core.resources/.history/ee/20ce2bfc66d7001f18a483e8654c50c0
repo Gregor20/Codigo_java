@@ -1,0 +1,15 @@
+package nueva2;
+
+import nueva.circulo;
+
+public class inicio_circulo {
+
+	public static void main(String[] args) {
+		circulo c1=new circulo();
+		
+		System.out.println(c1.perimetro());
+		System.out.println(c1.area());
+
+	}
+
+}

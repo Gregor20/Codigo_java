@@ -1,0 +1,14 @@
+package Principal;
+
+public class ejemploValueOf {
+
+	public static void main(String[] args) {
+		
+		char array []= {'c','u','l','o'};
+		System.out.println(String.valueOf(array));
+		
+		
+
+	}
+
+}

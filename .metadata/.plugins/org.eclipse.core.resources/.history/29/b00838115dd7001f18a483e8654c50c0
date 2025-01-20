@@ -1,0 +1,16 @@
+package nueva2;
+
+import nueva.Cuadrado;
+
+public class inicio_cuadrado {
+
+	public static void main(String[] args) {
+		
+		Cuadrado c1 =new Cuadrado ();
+		c1.getLado();
+		
+		System.out.println(c1);
+
+	}
+
+}

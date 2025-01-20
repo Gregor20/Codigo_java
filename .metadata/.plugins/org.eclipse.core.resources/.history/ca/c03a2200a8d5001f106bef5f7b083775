@@ -1,0 +1,18 @@
+package Principal;
+
+import java.util.Arrays;
+
+public class ejemplo_valueOf {
+
+	public static void main(String[] args) {
+		
+		int array []= {123,23,45,12,34};
+		String cadena= String.valueOf(array);
+		System.out.println(cadena);
+		
+		
+
+	}
+
+}
+

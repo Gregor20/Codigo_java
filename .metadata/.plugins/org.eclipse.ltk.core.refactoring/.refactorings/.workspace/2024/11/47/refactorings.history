@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Inicio_vectores&apos; to &apos;Inicio_matrices&apos;" description="Rename resource &apos;Inicio_vectores&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Inicio_vectores" name="Inicio_matrices" stamp="1732203261668" updateReferences="true"/>
+</session>

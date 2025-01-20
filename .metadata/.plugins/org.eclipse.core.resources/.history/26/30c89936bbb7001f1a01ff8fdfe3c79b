@@ -1,0 +1,60 @@
+package asdf;
+
+import java.util.*;
+
+public class ej2_matrices2 {
+static Scanner sc = new Scanner(System.in);
+	
+	
+	public static int alea(int mn, int m) {
+		
+		return (int) ( Math.random () * (m-mn+1) ) + mn;	
+	}
+	
+	public static void rellenaraleatorio(int m[][]) {  //-----------------RELLENAR
+		
+		for (int j = 0; j < m.length; j++) {
+			for (int k = 0; k < m[j].length; k++) {
+				m[j][k] = alea(10,99);
+			}
+		}
+	}
+	public static void imprimir(int m[][]) {  //----------------IMPRIMIR
+		
+		for (int j = 0; j < m.length; j++) {
+			for( int k=0; k<m[j].length; k++) {
+				System.out.printf("%6d",m[j][k]);
+			}
+			System.out.println(); // --------------el salto de linea va al terminar el primer bucle for y haber rellenado la primera fila (0,1,2,3,4)
+		}
+	}
+	public static void imprimirResultados(int m[][]) {  //----------------IMPRIMIR
+		
+		for (int j = 0; j < m.length; j++) {
+			int suma=0;
+			//int sumaColumnas[]=new int [   ]
+			
+			for( int k=0; k<m[j].length; k++) {
+				System.out.printf("%5d",m[j][k]);
+				suma+=m[j][k];
+			}
+			System.out.printf("%5d",suma);
+			System.out.println(); // --------------el salto de linea va al terminar el primer bucle for y haber rellenado la primera fila (0,1,2,3,4)
+		}
+	}
+	
+
+	
+	
+	public static void main(String[] args) {
+
+		int matriz[][] = new int[4][5]; //------------- DECLARAR
+		rellenaraleatorio(matriz);
+		imprimirResultados(matriz);
+
+		
+		
+
+	}
+
+}

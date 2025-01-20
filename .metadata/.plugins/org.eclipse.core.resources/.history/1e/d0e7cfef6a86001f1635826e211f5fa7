@@ -1,0 +1,17 @@
+package principal;
+
+public class ejerc03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double salario=3000, comision=1500;
+		
+		System.out.println(salario+" "+comision+" "+ (salario+comision));
+		
+		
+		
+		
+	}
+
+}

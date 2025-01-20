@@ -1,0 +1,25 @@
+package nueva;
+
+public class circulo {
+	private double radio;
+	
+	public circulo() {
+		this.radio=10;
+	}
+	public circulo (double ra) {
+		this.radio=ra;
+	}
+	public double getRadio() {
+		return radio;
+	}
+	public void setRadio(double radio) {
+		this.radio = radio;
+	}
+	
+	public double perimetro(double ra) {
+		return (int) 2*Math.PI*ra;
+	}
+	
+	
+	
+}

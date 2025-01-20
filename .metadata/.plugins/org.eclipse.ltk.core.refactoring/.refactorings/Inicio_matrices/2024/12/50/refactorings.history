@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ej2_matrices.java&apos; to &apos;asdf.ej2_matrices.java&apos;&#x0D;&#x0A;- Original project: &apos;Inicio_matrices&apos;&#x0D;&#x0A;- Destination element: &apos;asdf.ej2_matrices.java&apos;&#x0D;&#x0A;- Original element: &apos;asdf.ej2_matrices.java&apos;" description="Copy compilation unit" destination="/src&lt;asdf{ej2_matrices.java" element1="/src&lt;asdf{ej2_matrices.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1733918766263" units="1" version="1.0"/>
+</session>

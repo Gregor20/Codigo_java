@@ -1,0 +1,17 @@
+package Principal;
+
+import java.util.Arrays;
+
+public class ejemploValueOf {
+
+	public static void main(String[] args) {
+		
+		char array []= {'c','u','l','o'};
+		String cadena= Arrays.toString(array);
+		System.out.println(cadena);
+		
+		
+
+	}
+
+}

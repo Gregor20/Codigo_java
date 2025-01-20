@@ -1,0 +1,12 @@
+package Principal;
+
+public class ejemploValueOf {
+
+	public static void main(String[] args) {
+		
+		int array []= {123,12,1,23};
+		System.out.println(String.valueOf(array));
+
+	}
+
+}
