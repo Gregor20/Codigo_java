@@ -24,7 +24,7 @@ public class Inicio {
 		System.out.printf("IMC = %.0f\n",p4.getImc());
 		
 		//System.out.printf("Nombre:%s Edad:%d Sexo:%c\n IMC= %.0f\n",p5.getNombre(),p5.getEdad(),p5.getSexo(),p5.getImc());
-		p1.setSexo()
+		p1.setSexo('g');
 		System.out.println(p1);
 		
 		
