@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;javaproyect.Raiz&apos; to &apos;Redondeo&apos;&#x0D;&#x0A;- Original project: &apos;javaproyect&apos;&#x0D;&#x0A;- Original element: &apos;javaproyect.Raiz&apos;&#x0D;&#x0A;- Renamed element: &apos;javaproyect.Redondeo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Raiz&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;javaproyect{Raiz.java[Raiz" matchStrategy="1" name="Redondeo" qualified="false" references="true" similarDeclarations="false" stamp="1730195480749" textual="false" version="1.0"/>
-</session>

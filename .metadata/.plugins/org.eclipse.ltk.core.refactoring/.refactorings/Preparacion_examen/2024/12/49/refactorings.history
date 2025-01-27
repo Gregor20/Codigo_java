@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;new_.ej_notas.java&apos; to &apos;recorrer_filas_y_columnas_explicado.java&apos;&#x0D;&#x0A;- Original project: &apos;Preparacion_examen&apos;&#x0D;&#x0A;- Original element: &apos;new_.ej_notas.java&apos;&#x0D;&#x0A;- Renamed element: &apos;new_.recorrer_filas_y_columnas_explicado.java&apos;" description="Rename compilation unit &apos;ej_notas.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;new_{ej_notas.java" name="recorrer_filas_y_columnas_explicado.java" references="false" stamp="1733421448883" version="1.0"/>
-</session>

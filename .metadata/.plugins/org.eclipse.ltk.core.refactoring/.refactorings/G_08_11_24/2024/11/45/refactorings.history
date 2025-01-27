@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;_08_noviembre.potencia&apos; to &apos;Big_Integer_potencia&apos;&#x0D;&#x0A;- Original project: &apos;_08_noviembre&apos;&#x0D;&#x0A;- Original element: &apos;_08_noviembre.potencia&apos;&#x0D;&#x0A;- Renamed element: &apos;_08_noviembre.Big_Integer_potencia&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;potencia&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_08_noviembre{potencia.java[potencia" matchStrategy="1" name="Big_Integer_potencia" qualified="false" references="true" similarDeclarations="false" stamp="1731092097554" textual="false" version="1.0"/>
-</session>
