@@ -1,14 +1,13 @@
-package clases;
+package Poo;
 
-public class Espectador {
+public class Persona {
 	private String nombre;
 	private int edad;
-	private int dinero;
 	
-	public Espectador(String nombre, int edad, int dinero) {
+	public Persona(String nombre, int edad) {
+		super();
 		this.nombre = nombre;
 		this.edad = edad;
-		this.dinero = dinero;
 	}
 
 	public String getNombre() {
@@ -26,21 +25,13 @@ public class Espectador {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-
-	public int getDinero() {
-		return dinero;
-	}
-
-	public void setDinero(int dinero) {
-		this.dinero = dinero;
+	public String mensaje() {
+		return "Soy una persona";
 	}
 
 	@Override
 	public String toString() {
-		return "Espectador [nombre=" + nombre + ", edad=" + edad + ", dinero=" + dinero + "]";
+		return "Persona [nombre=" + nombre + ", edad=" + edad + "]";
 	}
 	
-	
-	
-
 }
