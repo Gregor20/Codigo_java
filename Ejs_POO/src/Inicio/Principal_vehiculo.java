@@ -21,7 +21,7 @@ public class Principal_vehiculo {
 		//m1=(new Motocicleta("Peugeot", "Tweet"));  NO IGUALA
 		int n1 = 1;
 		int n2;
-		n2=n1;
+		n2=n1; // EN TIPOS PRIMITIVOS SI IGUALA
 		
 		for (Vehiculo li : lista) {
 			//li.arrancar();

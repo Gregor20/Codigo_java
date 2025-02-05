@@ -15,7 +15,12 @@ public class Cuadrado extends FigurasGeometricas {
 	@Override
 	public double area() {
 		
-		return Math.pow(lado1, lado1);
+		return Math.pow(this.lado1, 2);
+	}
+
+	@Override
+	public String toString() {
+		return "Cuadrado lado=" + this.lado1;
 	}
 	
 	
