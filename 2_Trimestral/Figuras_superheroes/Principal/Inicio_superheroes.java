@@ -39,7 +39,7 @@ public class Inicio_superheroes {
 		
 		System.out.println(c1.toString());
 		//System.out.println(c1.conCapa());
-		System.out.println(c1.getVolumenColeccion());
+		//System.out.println(c1.getVolumenColeccion());
 	}
 
 }
