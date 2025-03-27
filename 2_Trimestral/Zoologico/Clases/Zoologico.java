@@ -32,27 +32,27 @@ public class Zoologico {
 		this.zonas.add(z);
 	}
 	public void añadirInstalaciones(Instalacion i) {
-		while(codigoRepetido(i.getCodigo_jaula())) {
-			i.setCodigo_jaula(alea()); // SI HAY UNA JAULA CON EL MISMO NUMERO GENERA UN NUEVO CODIGO DEL 1 AL 100
+		while(codigoRepetido(i.getCodigo_jaula())) { // mientras que el código si esté repetido
+			i.setCodigo_jaula(alea()); // SI HAY UNA JAULA CON EL MISMO NUMERO GENERA UN NUEVO CODIGO DEL 1 AL 100 Y O AÑADE
 		}this.instalaciones.add(i);
 	}
-	public boolean codigoRepetido(int codigo) {
-		for (Instalacion item : instalaciones) {
-			if(item.getCodigo_jaula()==codigo) {
-				return true;
+	public boolean codigoRepetido(int codigo) { // METODO BOOLEAN QUE COMPRUEBA SI EL CODIGO YA EXISTE EN EL ARRAY
+		for (Instalacion item : instalaciones) { //Recorre el array 
+			if(item.getCodigo_jaula()==codigo) { //Si la instalacion tiene el mismo codigo que el introducido
+				return true;                     // Devuelve codigo repetido true / si   
 			}
-		}return false;
+		}return false;                          // si no está, devuelve false codigo repetido / no
 	}
 	public void añadirAnimales(Animal a) {
-		while(animalRepetido(a.getCodigo())) {
-			System.out.println("Código de animal repetido, introduzca otro:");
+		while(animalRepetido(a.getCodigo())) {                                   //MIENTRAS QUE EL ANIMAL SI ESTÉ REPETIDO
+			System.out.println("Código de animal repetido, introduzca otro código para el animal:" + a.getNombre());   //LANZA MENSAJE PARA INTORDUCIR UN CODIGO NUEVO
 			String nuevoCodigo=sc.nextLine();
 			a.setCodigo(nuevoCodigo);
 		}this.animales.add(a);
 	}
-	private boolean animalRepetido(String codigo) {
-		for (Animal item : animales) {
-			if(item.getCodigo().equals(codigo)) {
+	private boolean animalRepetido(String codigo) { // METODO BOOLEAN QUE COMPRUEBA SI EL CODIGO (String) YA EXISTE
+		for (Animal item : animales) {              //RECORRE EL ARRAY animales 
+			if(item.getCodigo().equals(codigo)) {   //SI CONTIENE EL CODIGO INTRODUCIDO DEVUELVE ANIMAL REPTIDO TRUE/SI, SINO FALSE/NO
 				return true;
 			}
 		}return false;

@@ -32,7 +32,7 @@ public class Instalacion {
 	public int getCodigo_jaula() {
 		return codigo_jaula;
 	}
-	public void setCodigo_jaula(int codigo) {
+	public void setCodigo_jaula(int codigo) { // HABRIA QUE VER SI NECESITO REALMENTE ESTE METODO O NO????????????????????
 		this.codigo_jaula = codigo;
 	}
 	public Zona getZona() {

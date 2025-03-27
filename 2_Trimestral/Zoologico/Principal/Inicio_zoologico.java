@@ -26,11 +26,16 @@ public class Inicio_zoologico {
 		Instalacion i4 = new Instalacion(av1,"Jaula para las aves peligrosas",2001);
 		
 		
-		Animal a1 = new Animal ("Spike","León africano",2010,"leo01",i1);
-		Animal a2 = new Animal ("Manolo","Tigre siberiano",2005,"tig01",i1);
-		Animal a3 = new Animal ("Paquito","Mono Gibon",2006,"tig01",i2);
+		Animal a1 = new Animal ("Spike","León africano",2010,"leo01");
+		Animal a2 = new Animal ("Manolo","Tigre siberiano",2005,"tig01");
+		Animal a3 = new Animal ("Paquito","Mono Gibon",2006,"tig01");
+		Animal a4 = new Animal ("Águila","Águila Real",2000,"agu01");
 		
-		Animal a4 = new Animal ("Águila","Águila Real",2000,"agu01",i3);
+		a1.asignarInstalacion(i1);
+		a2.asignarInstalacion(i1);
+		a3.asignarInstalacion(i2);
+		a4.asignarInstalacion(i4);
+		a1.asignarInstalacion(i4);
 		
 		Trabajador t1 = new Trabajador("Juan Perez", "veterinaria", "50909886g");
 		Trabajador t2 = new Trabajador("Maria Jimenez", "cuidadora", "51349523j");
@@ -45,6 +50,7 @@ public class Inicio_zoologico {
 		z1.añadirAnimales(a1);
 		z1.añadirAnimales(a2);
 		z1.añadirAnimales(a3);
+		z1.añadirAnimales(a4);
 		
 		z1.añadirZonas(f1);
 		z1.añadirZonas(p1);

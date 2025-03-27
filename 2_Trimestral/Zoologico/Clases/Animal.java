@@ -10,14 +10,14 @@ public class Animal {
 	private Instalacion instalacion;
 	private Zona zona;
 	
-	public Animal(String nombre, String especie, int año_nacimiento, String codigo, Instalacion instalacion) {
+	public Animal(String nombre, String especie, int año_nacimiento, String codigo) {
 		super();
 		this.nombre = nombre;
 		this.especie = especie;
 		this.año_nacimiento = año_nacimiento;
 		this.codigo = codigo;
-		this.instalacion = instalacion;
-		this.zona=instalacion.getZona();
+		this.instalacion = null;
+		this.zona=null;
 		
 	}
 	public String getCodigo() {
@@ -25,6 +25,18 @@ public class Animal {
 	}
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
+	}
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void asignarInstalacion(Instalacion jaula) {
+		if(this.instalacion!=null) {
+			System.out.println("El animal "+this.nombre +" ya tiene una instalación asignada");
+		}
+		this.instalacion=jaula;
+		this.zona=jaula.getZona();
 	}
 	@Override
 	public String toString() {
