@@ -8,7 +8,8 @@ public class Instalacion {
 	private int año_instalacion;
 	private String descripcion;
 	private ArrayList<Integer> listaCodigos=new ArrayList<>();
-
+	
+	//metodo alea
 	private int alea() {
 		return (int) (Math.random() * 10) + 1;
 	}
@@ -22,18 +23,17 @@ public class Instalacion {
 	private int asignarNumero() {
 		int temp;
 		do {
-			temp = alea();                          //asignará numeros aleaotrios DEL 1 AL 10 hasta que listaCodigos no contenga el numero temp
-		} while (listaCodigos.contains(temp));
-		listaCodigos.add(temp);                     // cuando no este en listaCodigos, se añade a la lista
-		this.codigo_jaula = temp;                   // el codigo de la jaula es IGUAL AL  numero que no esta en la listaCodigos
+			temp = alea();                          //asigna a temp un numero aleatorio del 1 al 10
+		} while (listaCodigos.contains(temp));      //mientras que la lista contenga el numero de temp
+		listaCodigos.add(temp);                     //se añade a la lista
+		this.codigo_jaula = temp;                   //el codigo de la jaula es IGUAL AL  numero que no esta en la listaCodigos
 		return this.codigo_jaula;                   //devuelve el codigo
 	}
-
+	public void setCodigo_jaula(int codigo_jaula) {
+		this.codigo_jaula = codigo_jaula;
+	}
 	public int getCodigo_jaula() {
 		return codigo_jaula;
-	}
-	public void setCodigo_jaula(int codigo) { // HABRIA QUE VER SI NECESITO REALMENTE ESTE METODO O NO????????????????????
-		this.codigo_jaula = codigo;
 	}
 	public Zona getZona() {
 		return zona;

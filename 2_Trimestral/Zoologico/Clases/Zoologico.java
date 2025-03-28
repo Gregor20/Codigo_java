@@ -63,17 +63,17 @@ public class Zoologico {
 	public void añadirAsignaciones(Asignacion a) {
 		this.asignaciones.add(a);
 	}
-	public void mostarZonas() {
+	public void mostrarZonas() {
 		for (Zona item : zonas) {
 			System.out.println(item);
 		}
 	}
-	public void mostarInstalaciones() {
+	public void mostrarInstalaciones() {
 		for (Instalacion item : instalaciones) {
 			System.out.println(item);
 		}
 	}
-	public void mostarAnimales() {
+	public void mostrarAnimales() {
 		for (Animal item : animales) {
 			System.out.println(item );
 		}

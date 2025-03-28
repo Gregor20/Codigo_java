@@ -26,18 +26,34 @@ public class Animal {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-	
-	
 	public String getNombre() {
 		return nombre;
 	}
-	public void asignarInstalacion(Instalacion jaula) {
+	public Instalacion getInstalacion() {
+		return instalacion;
+	}
+	
+	public void setInstalacion(Instalacion instalacion) {
+		this.instalacion = instalacion;
+		if(instalacion!=null) {
+			this.zona=instalacion.getZona();
+		}
+	}
+	public boolean comprobarInstalacion() {
 		if(this.instalacion!=null) {
 			System.out.println("El animal "+this.nombre +" ya tiene una instalación asignada");
+			return false;
 		}
-		this.instalacion=jaula;
-		this.zona=jaula.getZona();
+		return true;	
 	}
+	public void asignarInstalacion(Instalacion a) {
+		if(this.comprobarInstalacion()) {
+			setInstalacion(a);
+			//System.out.println("Instalación asignada a "+ this.nombre);
+		}
+	}
+	
+	
 	@Override
 	public String toString() {
 		return "Especie: " + especie +", "+ "Nombre: "+ nombre+", " +  "Año_nacimiento: " + año_nacimiento+", " 
